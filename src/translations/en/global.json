@@ -34,7 +34,11 @@
         "submit": "Submit",
         "errorAddFrequentVisit": "Error adding frequent visit",
         "frequentVisitAdded": "Frequent visit added:",
-        "error": "Error:"
+        "error": "Error:",
+        "depto1": "Apartment 01",
+        "depto2": "Apartment 02",
+        "depto3": "Apartment 03",
+        "depto4": "Apartment 04"
     },
     "vehiculos": {
         "formTitle": "Vehicle Registration",

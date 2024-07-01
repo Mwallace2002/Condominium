@@ -75,10 +75,10 @@ const EntryForm = ({ onEntryCreated, defaultTipo }) => {
                 <input type="text" name="referencia" placeholder={t('entryForm.referencePlaceholder')} value={newEntry.referencia} onChange={handleInputChange} />
                 <select id="departmentNoFrecuente" name="dept" value={newEntry.dept} onChange={handleInputChange}>
                     <option value="">{t('entryForm.departmentPlaceholder')}</option>
-                    <option value="Departamento 01">Departamento 01</option>
-                    <option value="Departamento 02">Departamento 02</option>
-                    <option value="Departamento 03">Departamento 03</option>
-                    <option value="Departamento 04">Departamento 04</option>
+                    <option value="Departamento 01">{t('visitaFrecuenteForm.depto1')}</option>
+                    <option value="Departamento 02">{t('visitaFrecuenteForm.depto2')}</option>
+                    <option value="Departamento 03">{t('visitaFrecuenteForm.depto3')}</option>
+                    <option value="Departamento 04">{t('visitaFrecuenteForm.depto4')}</option>
                 </select>
                 <button type="submit" disabled={loading}>{loading ? t('entryForm.loading') : t('entryForm.submitButton')}</button>
             </form>

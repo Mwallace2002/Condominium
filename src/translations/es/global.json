@@ -34,7 +34,11 @@
         "submit": "Enviar",
         "errorAddFrequentVisit": "Error al agregar visita frecuente",
         "frequentVisitAdded": "Visita frecuente agregada:",
-        "error": "Error:"
+        "error": "Error:",
+        "depto1": "Departamento 01",
+        "depto2": "Departamento 02",
+        "depto3": "Departamento 03",
+        "depto4": "Departamento 04"
     },
     "vehiculos": {
         "formTitle": "Registro de Vehículos",

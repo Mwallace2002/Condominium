@@ -3,7 +3,7 @@ import Navbar from '../Navbar/Navbar.jsx';
 import './Home.css';
 import { useTranslation } from "react-i18next";
 import axios from 'axios';
-import EntryForm from '../../components/EntryForm/EntryForm.jsx'; 
+import VisitaFrecuenteForm from '../../components/VisitaFrecuenteForm/visitaFrecuenteForm.jsx'; 
 
 const HomeUser = () => {
     const { t } = useTranslation("global");
@@ -34,13 +34,12 @@ const HomeUser = () => {
                 setError('Error fetching entries. Please try again later.');
             });
     };
-    const defaultTipo = 'visitas'; // Establecer el tipo predeterminado español por la base de datos
 
     return (
         <div>
             <Navbar />
             <div className="main-home">
-                <EntryForm onEntryCreated={fetchEntries} labels={labels} defaultTipo={defaultTipo} />
+                <VisitaFrecuenteForm />
                 <div className="entries-list">
                     <h2>{t('home.entriesList')}</h2>
                     {error && <p>{t('home.errorFetchingEntries')}</p>}

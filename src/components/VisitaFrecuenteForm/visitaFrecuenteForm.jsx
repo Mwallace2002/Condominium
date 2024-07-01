@@ -2,13 +2,6 @@ import React, { useState } from 'react';
 import './visitaFrecuenteForm.css';
 import { useTranslation } from 'react-i18next';
 
-const departments = [
-  'Ventas',
-  'Marketing',
-  'Desarrollo',
-  'Recursos humanos'
-];
-
 const VisitaFrecuenteForm = () => {
   const { t } = useTranslation("global");
   const [selectedDepartment, setSelectedDepartment] = useState('');
@@ -16,6 +9,13 @@ const VisitaFrecuenteForm = () => {
   const [nombre, setNombre] = useState('');
   const [fechaNacimiento, setFechaNacimiento] = useState('');
   const [patenteFrecuente, setPatenteFrecuente] = useState('');
+
+  const departments = [
+    t('visitaFrecuenteForm.depto1'),
+    t('visitaFrecuenteForm.depto2'),
+    t('visitaFrecuenteForm.depto3'),
+    t('visitaFrecuenteForm.depto4')
+  ];
 
   const handleDepartmentChange = (event) => {
     setSelectedDepartment(event.target.value);
