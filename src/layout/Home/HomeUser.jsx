@@ -39,7 +39,7 @@ const HomeUser = () => {
         <div>
             <Navbar />
             <div className="main-home">
-                <VisitaFrecuenteForm />
+                <center><VisitaFrecuenteForm /></center>
                 <div className="entries-list">
                     <h2>{t('home.entriesList')}</h2>
                     {error && <p>{t('home.errorFetchingEntries')}</p>}
