@@ -68,7 +68,7 @@ function DeliveryForm() {
                 {whatsappURL && (
                     <div className="qr-code">
                         <center>
-                            <h2>{t('delivery.scanQR')}</h2> {/* Traducción para scan QR */}
+                            <h2 style={{ color: 'white' }}>{t('delivery.scanQR')}</h2> 
                             <QRCode value={whatsappURL} />
                         </center>
                     </div>

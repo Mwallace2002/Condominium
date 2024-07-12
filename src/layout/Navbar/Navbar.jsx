@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import './Navbar.css';
@@ -6,10 +6,15 @@ import spanishFlagUrl from './icons/spain.svg';
 import englishFlagUrl from './icons/uk.svg';
 
 const Navbar = () => {
+    const defaultLanguage = localStorage.getItem('i18nextLng') || 'es'; // Default to Spanish if no language is stored
     const [collapse, setCollapse] = useState(false);
-    const [selectedLanguage, setSelectedLanguage] = useState(localStorage.getItem('i18nextLng') ); // Default to Spanish if no language is stored
+    const [selectedLanguage, setSelectedLanguage] = useState(defaultLanguage);
     const { t, i18n } = useTranslation('global');
     const userRole = localStorage.getItem('userRole');
+
+    useEffect(() => {
+        i18n.changeLanguage(defaultLanguage); // Ensure the i18n language is set on component mount
+    }, [defaultLanguage, i18n]);
 
     const toggleCollapse = () => {
         setCollapse(!collapse);
@@ -18,8 +23,9 @@ const Navbar = () => {
     const changeLanguage = (lang) => {
         i18n.changeLanguage(lang);
         setSelectedLanguage(lang);
+        localStorage.setItem('i18nextLng', lang);
     };
-    
+
     const handleLogout = () => {
         localStorage.removeItem('token');
         localStorage.removeItem('userRole');
