@@ -4,6 +4,7 @@ import './Home.css';
 import { useTranslation } from "react-i18next";
 import axios from 'axios';
 import VisitaFrecuenteForm from '../../components/VisitaFrecuenteForm/visitaFrecuenteForm.jsx'; 
+import TitleComponent from '../../components/TitleComponent/TitleComponent.jsx'; 
 
 const HomeUser = () => {
     const { t } = useTranslation("global");
@@ -38,6 +39,9 @@ const HomeUser = () => {
     return (
         <div>
             <Navbar />
+            <div className="tituloHome">
+                <TitleComponent text={t('navbar.home')} />
+            </div>
             <div className="main-home">
                 <VisitaFrecuenteForm />
                 <div className="entries-list">

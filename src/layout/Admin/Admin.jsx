@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import './Admin.css'; // Asegúrate de importar el CSS aquí
 import Navbar from '../Navbar/Navbar.jsx';
 import { useTranslation } from 'react-i18next';
+import TitleComponent from '../../components/TitleComponent/TitleComponent.jsx'; 
 
 function Admin() {
   const { t, i18n } = useTranslation('global');
@@ -36,8 +37,8 @@ function Admin() {
   return (
     <div>
       <Navbar />
+      <TitleComponent text={t('admin.parametersConfig')} />
       <div className="admin-form-container">
-        <h1>{t('admin.parametersConfig')}</h1>
         <form className="admin-form" onSubmit={handleSubmit}>
           <label htmlFor="tiempoEstancia">{t('admin.stayTime')}</label>
           <input

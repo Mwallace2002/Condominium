@@ -1,14 +1,13 @@
-/* EntryForm.css */
-
-/* Estilos principales */
 .entry-form {
     background-color: #d4a682;
     border: 1px solid #d4a682;
     padding: 20px;
     margin-top: 20px;
+    margin-bottom: 20px;
     max-width: 600px; /* Limitar el ancho máximo */
     margin-left: auto; /* Centramos el formulario */
     margin-right: auto; /* Centramos el formulario */
+    border-radius: 10px; 
 }
 
 .entry-form h2 {
@@ -22,7 +21,7 @@
     width: 100%;
     box-sizing: border-box;
     border: 1px solid #d4a682; /* Color del borde */
-    border-radius: 4px;
+    border-radius: 8px; /* Añadimos bordes redondeados */
 }
 
 .entry-form button {
@@ -32,6 +31,7 @@
     border: none;
     cursor: pointer;
     width: 100%; /* Aseguramos que el botón sea 100% ancho en móviles */
+    border-radius: 8px; /* Añadimos bordes redondeados */
 }
 
 .entry-form button:disabled {

@@ -48,3 +48,9 @@
   display: flex;
   justify-content: center;
 }
+
+.tituloVehiculo {
+  max-width: 600px;
+  margin: 20px auto; 
+  border-radius: 10px;
+}

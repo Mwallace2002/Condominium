@@ -3,6 +3,7 @@ import Navbar from '../Navbar/Navbar.jsx';
 import './Visitas.css';
 import VisitaFrecuenteForm from '../../components/VisitaFrecuenteForm/visitaFrecuenteForm.jsx'; 
 import { useTranslation } from 'react-i18next';
+import TitleComponent from '../../components/TitleComponent/TitleComponent.jsx'; 
 
 const departments = [
   'Departamento 01',
@@ -125,6 +126,10 @@ const Visitas = () => {
   return (
     <div>
       <Navbar />
+      <div className="titulo">
+        <TitleComponent text={t('navbar.visits')} />
+      </div>
+
       <div className="visitas-form-container">
         <h1><center>{t('visitas.verifyFrequentVisit')}</center></h1>
         <form className="visitas-form" onSubmit={handleSubmitVerificarFrecuente}>

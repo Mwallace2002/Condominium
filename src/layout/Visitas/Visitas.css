@@ -37,3 +37,9 @@
 .visitas-form button:hover {
   background-color: #e07b00;
 }
+
+.titulo {
+  max-width: 500px;
+  margin: 20px auto; 
+  border-radius: 10px;
+}

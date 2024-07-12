@@ -4,6 +4,7 @@ import { useTranslation } from "react-i18next";
 import { useNavigate } from 'react-router-dom';
 import logo from './images/logo.jpeg'; // Importa la imagen
 import Navbar from '../Navbar/Navbar.jsx';
+import TitleComponent from '../../components/TitleComponent/TitleComponent.jsx'; 
 
 const Login = () => {
     const [password, setPassword] = useState('');
@@ -85,7 +86,9 @@ const Login = () => {
         <>  
             <div><Navbar /></div>
             <div className="condominium-header">
-                <h1 className="condominium-title">CONDOMINIUM</h1>
+                <div className="tituloLogin">
+                    <h1>CONDOMINIUM</h1>
+                </div>
                 <img src={logo} alt="Logo del condominio" className="condominium-logo"/>
             </div>
             <div className="custom-form">

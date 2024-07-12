@@ -1,7 +1,8 @@
 .visitas-form-container {
   max-width: 100%; /* Cambiado a 100% para ocupar todo el ancho disponible */
-  width: 500px; /* Establecido un ancho máximo */
-  margin: 20px auto; 
+  width: 100%; /* Establecido un ancho del 100% del contenedor padre */
+  max-width: 500px; /* Ancho máximo para el formulario */
+  margin: 20px auto; /* Centramos el formulario vertical y horizontalmente */
   padding: 20px;
   border: 1px solid #d4a682;
   border-radius: 10px;
@@ -40,4 +41,58 @@
 
 .visitas-form button:hover {
   background-color: #e07b00;
+}
+
+/* Estilos para pantallas pequeñas */
+@media (max-width: 600px) {
+  .visitas-form-container {
+      padding: 15px; /* Reducimos el padding en pantallas pequeñas */
+  }
+
+  .visitas-form input,
+  .visitas-form select {
+      padding: 6px; /* Reducimos el padding en inputs y selects */
+      font-size: 0.9em; /* Ajustamos el tamaño de la fuente */
+  }
+
+  .visitas-form button {
+      padding: 8px 12px; /* Ajustamos el padding del botón */
+      font-size: 0.9em; /* Ajustamos el tamaño de la fuente */
+  }
+}
+
+/* Estilos para pantallas medianas (tablets) */
+@media (min-width: 601px) and (max-width: 992px) {
+  .visitas-form-container {
+      padding: 18px; /* Ajustamos el padding para tablets */
+  }
+
+  .visitas-form input,
+  .visitas-form select {
+      padding: 7px; /* Ajustamos el padding en inputs y selects */
+      font-size: 0.95em; /* Ajustamos el tamaño de la fuente */
+  }
+
+  .visitas-form button {
+      padding: 9px 13px; /* Ajustamos el padding del botón */
+      font-size: 0.95em; /* Ajustamos el tamaño de la fuente */
+  }
+}
+
+/* Estilos para pantallas grandes (laptops y desktops) */
+@media (min-width: 993px) {
+  .visitas-form-container {
+      padding: 20px; /* Padding original para pantallas grandes */
+  }
+
+  .visitas-form input,
+  .visitas-form select {
+      padding: 8px; /* Padding original en inputs y selects */
+      font-size: 1em; /* Tamaño de fuente original */
+  }
+
+  .visitas-form button {
+      padding: 10px 15px; /* Padding original del botón */
+      font-size: 1em; /* Tamaño de fuente original */
+  }
 }

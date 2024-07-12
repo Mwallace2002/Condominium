@@ -141,4 +141,3 @@ const EntryForm = ({ onEntryCreated, defaultTipo }) => {
 };
 
 export default EntryForm;
-

@@ -4,6 +4,7 @@ import QRCode from 'qrcode.react';
 import './Delivery.css';
 import EntryForm from '../../components/EntryForm/EntryForm.jsx';
 import { useTranslation } from 'react-i18next';
+import TitleComponent from '../../components/TitleComponent/TitleComponent.jsx'; 
 
 function DeliveryForm() {
     const { t, i18n } = useTranslation('global');
@@ -62,7 +63,7 @@ function DeliveryForm() {
         <div>
             <Navbar />
             <div className="delivery-form-container">
-                <h1><center>{t('delivery.title')}</center></h1>
+                <TitleComponent text={t('delivery.title')} />
                 <EntryForm onEntryCreated={handleEntryCreated} labels={labels} defaultTipo="Delivery" /> 
                 {whatsappURL && (
                     <div className="qr-code">

@@ -5,7 +5,7 @@
     justify-content: center;
     margin: 20px auto; /* Aumentado el margen para separación */
     max-width: 100%; /* Aprovecha todo el ancho disponible */
-    width: 300px; /* Ancho máximo del contenido */
+    width: 90%; /* Ancho máximo del contenido, permite ajustar al 90% del contenedor */
     box-sizing: border-box; /* Asegura que el padding no afecte el ancho total */
 }
 
@@ -52,6 +52,7 @@
     border: 1px solid #ddd; /* Añadido borde para separación */
     padding: 10px; /* Espaciado interior */
     overflow-x: auto; /* Agregado para permitir desplazamiento horizontal en tablas grandes */
+    border-radius: 10px; /* Añadimos bordes redondeados */
 }
 
 .entries-list table {
@@ -68,6 +69,16 @@
 
 /* Media query para ajustar estilos en pantallas más pequeñas */
 @media screen and (max-width: 600px) {
+    .main-home {
+        width: 100%; /* Ocupa todo el ancho disponible en pantallas pequeñas */
+        padding: 10px; /* Reducimos el padding */
+    }
+
+    .custom-button1 {
+        padding: 8px 15px; /* Ajustamos el padding del botón */
+        font-size: 0.9em; /* Ajustamos el tamaño de la fuente */
+    }
+
     .entries-list {
         padding: 5px; /* Reducir el padding para ahorrar espacio */
     }
@@ -78,7 +89,6 @@
         font-size: 12px; /* Reducir el tamaño del texto para mejor legibilidad */
     }
 }
-
 
 .entry-form {
     background-color: #d4a682;
@@ -117,4 +127,33 @@
 
 .error-message {
     color: red;
+}
+
+.tituloHome {
+    max-width: 600px;
+    margin: 20px auto; 
+    border-radius: 10px;
+}
+
+/* Media query para ajustar estilos en pantallas medianas (tablets) */
+@media screen and (min-width: 601px) and (max-width: 992px) {
+    .main-home {
+        width: 80%; /* Ajustamos el ancho para tablets */
+        padding: 15px; /* Ajustamos el padding */
+    }
+
+    .custom-button1 {
+        padding: 9px 18px; /* Ajustamos el padding del botón */
+        font-size: 0.95em; /* Ajustamos el tamaño de la fuente */
+    }
+
+    .entries-list {
+        padding: 8px; /* Ajustamos el padding */
+    }
+
+    .entries-list th,
+    .entries-list td {
+        padding: 7px; /* Ajustar el padding de las celdas */
+        font-size: 14px; /* Ajustamos el tamaño del texto */
+    }
 }

@@ -101,3 +101,56 @@
     height: auto; /* Maintain aspect ratio */
     margin-right: 5px; /* Adjust spacing between icon and button edge */
 }
+
+.tituloLogin {
+    background-color: #49c0b6;
+    border: 1px solid #49c0b6;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px; /* Bordes redondeados */
+    text-align: center; /* Centrar el texto */
+    max-width: 300px; /* Limitar el ancho máximo */
+    margin-left: auto; /* Centramos la caja */
+    margin-right: auto; /* Centramos la caja */
+    color: black; /* Color del texto */
+}
+
+.tituloLogin h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+/* Estilos para pantallas pequeñas */
+@media (max-width: 600px) {
+    .tituloLogin {
+        padding: 15px; /* Reducimos el padding en pantallas pequeñas */
+    }
+
+    .tituloLogin h1 {
+        font-size: 1.5em; /* Ajustamos el tamaño de la fuente */
+    }
+}
+
+/* Estilos para pantallas medianas (tablets) */
+@media (min-width: 601px) and (max-width: 992px) {
+    .tituloLogin {
+        padding: 18px; /* Ajustamos el padding para tablets */
+    }
+
+    .tituloLogin h1 {
+        font-size: 1.75em; /* Ajustamos el tamaño de la fuente */
+    }
+}
+
+/* Estilos para pantallas grandes (laptops y desktops) */
+@media (min-width: 993px) {
+    .tituloLogin {
+        padding: 20px; /* Padding original para pantallas grandes */
+    }
+
+    .tituloLogin h1 {
+        font-size: 2em; /* Tamaño de fuente original para pantallas grandes */
+    }
+}
+

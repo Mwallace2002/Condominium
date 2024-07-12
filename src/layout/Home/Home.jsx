@@ -5,6 +5,7 @@ import './Home.css';
 import { useTranslation } from "react-i18next";
 import axios from 'axios';
 import EntryForm from '../../components/EntryForm/EntryForm.jsx'; 
+import TitleComponent from '../../components/TitleComponent/TitleComponent.jsx'; 
 
 const Home = () => {
     const { t, i18n } = useTranslation("global");
@@ -40,6 +41,9 @@ const Home = () => {
     return (
         <div>
             <Navbar />
+            <div className="tituloHome">
+                    <TitleComponent text={t('navbar.home')} />
+            </div>
             <div className="main-home">
                 <EntryForm onEntryCreated={fetchEntries} labels={labels} defaultTipo={defaultTipo} />
                 <div className="entries-list">

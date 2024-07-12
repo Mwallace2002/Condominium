@@ -1,0 +1,54 @@
+/* TitleComponent.css */
+
+.title-component {
+    background-color: #d4a682;
+    border: 1px solid #d4a682;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px; /* Bordes redondeados */
+    text-align: center; /* Centrar el texto */
+    max-width: 600px; /* Limitar el ancho máximo */
+    margin-left: auto; /* Centramos la caja */
+    margin-right: auto; /* Centramos la caja */
+    color: black; /* Color del texto */
+}
+
+.title-component h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+/* Estilos para pantallas pequeñas */
+@media (max-width: 600px) {
+    .title-component {
+        padding: 15px; /* Reducimos el padding en pantallas pequeñas */
+    }
+
+    .title-component h1 {
+        font-size: 1.5em; /* Ajustamos el tamaño de la fuente */
+    }
+}
+
+/* Estilos para pantallas medianas (tablets) */
+@media (min-width: 601px) and (max-width: 992px) {
+    .title-component {
+        padding: 18px; /* Ajustamos el padding para tablets */
+    }
+
+    .title-component h1 {
+        font-size: 1.75em; /* Ajustamos el tamaño de la fuente */
+    }
+}
+
+/* Estilos para pantallas grandes (laptops y desktops) */
+@media (min-width: 993px) {
+    .title-component {
+        padding: 20px; /* Padding original para pantallas grandes */
+    }
+
+    .title-component h1 {
+        font-size: 2em; /* Tamaño de fuente original para pantallas grandes */
+    }
+}
+

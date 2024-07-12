@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import EntryForm from '../../components/EntryForm/EntryForm.jsx';
 import Navbar from '../Navbar/Navbar.jsx';
 import ParkingStatus from '../../components/ParkingStatus/ParkingStatus.jsx'; 
+import TitleComponent from '../../components/TitleComponent/TitleComponent.jsx';
 import './Vehiculos.css'; 
 import QRCode from 'qrcode.react';
 import { useTranslation } from 'react-i18next';
@@ -170,7 +171,9 @@ function Vehiculos() {
     <div style={{ display: 'flex', justifyContent: 'center' }}>
       <Navbar />
       <div className='vehiculos-form-container'>
-        <h1 style={{ color: 'white' }}>{t('vehiculos.formTitle')}</h1>
+        <div className="tituloVehiculo">
+          <TitleComponent text={t('vehiculos.formTitle')} />
+        </div>
         <EntryForm onEntryCreated={handleEntryCreated} labels={labels} defaultTipo="Vehiculo" />
         <div className='graphics-container'>
             <ParkingStatus freeSpots={freeSpots} onFreeSpot={handleFreeSpot} /> 
