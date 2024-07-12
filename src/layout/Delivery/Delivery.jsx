@@ -63,7 +63,7 @@ function DeliveryForm() {
             <Navbar />
             <div className="delivery-form-container">
                 <h1><center>{t('delivery.title')}</center></h1>
-                <EntryForm onEntryCreated={handleEntryCreated} labels={labels} defaultTipo="delivery" /> {/* Pasar defaultTipo como 'delivery' */}
+                <EntryForm onEntryCreated={handleEntryCreated} labels={labels} defaultTipo="Delivery" /> 
                 {whatsappURL && (
                     <div className="qr-code">
                         <center>

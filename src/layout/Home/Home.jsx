@@ -35,7 +35,7 @@ const Home = () => {
         submitButton: t('home.submitButton')
     };
 
-    const defaultTipo = 'visitas'; // Establecer el tipo predeterminado español por la base de datos
+    const defaultTipo = 'Visita'; // Establecer el tipo predeterminado español por la base de datos
 
     return (
         <div>

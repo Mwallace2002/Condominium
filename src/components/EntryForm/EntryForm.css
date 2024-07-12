@@ -21,6 +21,8 @@
     padding: 8px;
     width: 100%;
     box-sizing: border-box;
+    border: 1px solid #d4a682; /* Color del borde */
+    border-radius: 4px;
 }
 
 .entry-form button {
@@ -46,11 +48,11 @@
     .entry-form {
         padding: 15px; /* Reducimos el padding en pantallas pequeñas */
     }
-    
+
     .entry-form h2 {
         font-size: 1.5em; /* Ajustamos el tamaño de la fuente */
     }
-    
+
     .entry-form input,
     .entry-form select,
     .entry-form button {

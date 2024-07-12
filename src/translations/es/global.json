@@ -8,8 +8,10 @@
         "Logout": "Cerrar sesión"
     },
     "entryForm": {
-        "formTitle": "Formulario de Entrada",
+        "formTitle": "Formulario de registro",
         "namePlaceholder": "Nombre",
+        "carNamePlaceholder": "Modelo del auto",
+        "deliveryNamePlaceholder": "Nombre del destinatario",
         "referencePlaceholder": "Referencia",
         "departmentPlaceholder": "Seleccionar Departamento",
         "submitButton": "Enviar",
@@ -17,7 +19,16 @@
         "errorIncompleteFields": "Por favor complete todos los campos.",
         "errorRequest": "Error en la solicitud",
         "errorCreateEntry": "Error creando la entrada. Por favor, intente nuevamente.",
-        "errorNetwork": "Error de red. Por favor, intente nuevamente."
+        "errorNetwork": "Error de red. Por favor, intente nuevamente.",
+        "patentePlaceholder": "Patente",
+        "idPlaceholder": "ID Paquete",
+        "departmentTitle": "Selecciona el Departmento:",
+        "rutTitle": "Ingrese el RUT (Sin punto ni guion):",
+        "patenteTitle": "Ingrese la patente:",
+        "deliveryTitle": "Ingrese el ID del paquete:",
+        "nameTitle": "Ingrese el nombre de la visita:",    
+        "carNameTitle": "Ingrese el modelo del auto:",
+        "deliveryNameTitle": "Ingrese el nombre del destinatario:"
     },
     "parkingStatus": {
         "parkingSpot": "Estacionamiento",

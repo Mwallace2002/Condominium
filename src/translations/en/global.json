@@ -8,8 +8,10 @@
         "Logout": "Logout"
     },
     "entryForm": {
-        "formTitle": "Entry Form",
+        "formTitle": "Registration Form",
         "namePlaceholder": "Name",
+        "carNamePlaceholder": "Car Model",
+        "deliveryNamePlaceholder": "Name of the recipient",
         "referencePlaceholder": "Reference",
         "departmentPlaceholder": "Select Department",
         "submitButton": "Submit",
@@ -17,7 +19,16 @@
         "errorIncompleteFields": "Please fill in all fields.",
         "errorRequest": "Request error",
         "errorCreateEntry": "Error creating entry. Please try again.",
-        "errorNetwork": "Network error. Please try again."
+        "errorNetwork": "Network error. Please try again.",
+        "patentePlaceholder": "License Plate",
+        "idPlaceholder": "Package ID",
+        "departmentTitle": "Select Department:",
+        "rutTitle": "RUT (without dots or dashes):",
+        "patenteTitle": "License Plate:",
+        "deliveryTitle": "Enter the package ID:",
+        "nameTitle": "Enter the visitors name:",    
+        "carNameTitle": "Enter the car model name:",
+        "deliveryNameTitle": "Enter the name of the recipient:"
     },
     "parkingStatus": {
         "parkingSpot": "Parking Spot",
